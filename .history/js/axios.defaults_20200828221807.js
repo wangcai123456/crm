@@ -21,6 +21,7 @@ axios.interceptors.request.use(config => {
     })
     //配置响应拦截器
 axios.interceptors.response.use(response => {
+    // console.log(response);
     return response.data;
 }, reason => {
     //如果路径出错了，通过会返回404，还有一些其他的错误...

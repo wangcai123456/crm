@@ -22,14 +22,14 @@ $(function() {
         //     console.log(err);
         // })
 
-        // try {
-        //     let res = await axios.post("/user/login123", { account, password })
-        // } catch (e) {
-        //     console.log(e);
-        // }
+        try {
+            let res = await axios.post("/user/login123", { account, password })
+        } catch (e) {
+            console.log(e);
+        }
 
-        let res = await axios.post("/user/login", { account, password })
-        console.log(res);
+        // let res = await axios.post("/user/login", { account, password })
+        // console.log(res);
 
         if (parseInt(res.code) === 0) {
             alert("登录成功")
