@@ -16,18 +16,16 @@
             console.log("第一件事,姓名:" + name);
         }
         let f2 = function(_, age) { //代表此数据一般用不到
-            console.log(("第二件事,年龄:" + age));
+            console.log(("第二件事,年龄:" + e));
         }
         let $plan = $.Callbacks();
         //订阅这两件事
         $plan.add(f1)
         $plan.add(f2)
-        $plan.add(f2)
-        $plan.add(f2)
-        $plan.add(f2)
-        $plan.add(f2)
+
         $("#btn").click(function() {
-            $plan.fire("猫蛋狗蛋", 100); //发布
+            // console.log("----------------------");
+            $plan.fire("hello tutu!"); //发布
         });
     </script>
     <!-- <script>

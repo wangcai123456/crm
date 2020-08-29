@@ -18,8 +18,6 @@ $(function() {
                 window.location.href = "login.html"
                 return;
             }
-            //退出登录失败
-            alert("网络不给力，稍后再试")
         })
     })
     $plan.add((power) => {

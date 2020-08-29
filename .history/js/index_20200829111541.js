@@ -12,14 +12,7 @@ $(function() {
 
         //实现退出登录
         $(".baseBox>a").click(async function() {
-            let result = await axios.get("/user/signout")
-            if (result.code == 0) {
-                //退出登录
-                window.location.href = "login.html"
-                return;
-            }
-            //退出登录失败
-            alert("网络不给力，稍后再试")
+            let result = await axios.get("/user/")
         })
     })
     $plan.add((power) => {
